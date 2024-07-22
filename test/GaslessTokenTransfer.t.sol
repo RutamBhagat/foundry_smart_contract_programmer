@@ -15,7 +15,7 @@ contract GaslessTokenTransferTest is Test {
     uint constant AMOUNT = 1000;
     uint constant FEE = 10;
 
-    function setup() public {
+    function setUp() public {
         sender = vm.addr(SENDER_PRIVATE_KEY);
         receiver = address(2);
         token = new ERC20Permit("test", "test", 18);
